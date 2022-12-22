@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+				<meta charset="UTF-8">
+			  <meta http-equiv="X-UA-Compatible"content="IE=edge">
+			  <meta name ="viewport"content="width=device-width, initial scale=1.0">
+			  <title>ayam</title>
+			  <style>
+			  * {
+			  margin: 0;
+			  padding: 0;
+			  box-sizing: border-box;
+			  }
+			  
+			  body {
+			  min-height: 100vh;
+			  background: #EFEFF2;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  }
+			  
+			  .calculator {
+			  width: 300px;
+			  height: 500px;
+			  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+			  border-radius: 12px;
+			  background: #22252D;
+			  overflow: hidden;
+			  }
+			  
+			  form input {
+			  width: 100%;
+			  height: 150px;
+			  border: none;
+			  border-radius: 12px;
+			  font-size: 2rem;
+			  padding: 1rem;
+			  color: #FFF;
+			  background: #000;
+			  text-align: right;
+			  pointer-events: none;
+			  }
+			  
+			  .buttons {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  padding: 20px;
+			  }
+			  
+			  button {
+			  flex: 0 0 22%;
+			  margin: 5px 0;
+			  border: 1px solid #000;
+			  width: 60px;
+			  height: 52px;
+			  font-size: 22px;
+			  font-weight: 600;
+			  border-radius: 5px;
+			  cursor: pointer;
+			  }
+			  
+			  .btn-yellow {
+			  background: #FF8C00;
+			  color: #FFF;
+			  }
+			  
+			  .btn-grey {
+			  background: rgb (224, 224, 224);
+			  }
+			  
+			  .btn-green {
+			  background: #32CD32;
+			  }
+			  
+			  .btn-red {
+			  background: red;
+			  }
+			  .btn-greyy {
+			   background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmTgI62s1L0uv4kCxtL69fl_1Th-QxY_OuQ&usqp=CAU");
+  background-size: 100%;
+			  }
+			  .btn-grey1 {
+			  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8o197REzARhde5MJZijRpMC6W3Y1xDpISkA&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey2 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCWpuVL60EjqfQEGr91q6GCLPVmguFvKL4A&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey3 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3nrUZOfqvWSCoCljb-gFs8H4XgSyXjYRp0w&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey4 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnJJ3O-_x7XJrOVBFxchah3bZKTYghWX91HQ&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey5 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNCO0uspJMFRhH82WUoWrpuXSQ6DJyGojIQ&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey6 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCQPV0fTO6_-sLo31syuxxgF-JZ1J5cry9Q&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey7 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9whTi7eIRAVgcMGbKun5NPJYr9iWl5xm9Q&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey8 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHbDCuZ87_ysi9ZacD32W2ltepZzosbNd9A&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey9 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJiBNJts1Gko5VkyIfEu5mDfMl6ljGUURvA&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey10 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpY1359C_XmNDtp2n0tbUgR53vjjpBUn_QoA&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  .btn-grey11 {
+			  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSux-zmhH_W19gLv_j2hOmK6V1uwGJs1zwBZw&usqp=CAU");
+			  background-size: 100%;
+			  }
+			  </style>
+			</head>
+			
+			<body>
+			
+					<section class="calculator">
+									<form>
+													<input type="text" class="screen">
+									</form>
+									
+							<div class="buttons">
+								<button type ="button" class="btn-grey btn-red">c</button>
+								<button type ="button" class="btn btn-yellow" data-num="(">(</button>
+								<button type ="button" class="btn btn-yellow" data-num=")">)</button>
+								<button type ="button" class="btn btn-yellow" data-num="/">÷</button>
+								
+								<button type ="button" class="btn btn-grey11" data-num="7">7</button>
+								<button type ="button" class="btn btn-grey10" data-num="8">8</button>
+								<button type ="button" class="btn btn-grey9" data-num="9">9</button>
+								<button type ="button" class="btn btn-yellow" data-num="*">x</button>
+								<button type ="button" class="btn btn-grey8" data-num="4">4</button>
+								<button type ="button" class="btn btn-grey7" data-num="5">5</button>
+								<button type ="button" class="btn btn-grey6" data-num="6">6</button>
+								<button type ="button" class="btn btn-yellow" data-num="+">+</button>
+								<button type ="button" class="btn btn-grey5" data-num="1">1</button>
+								<button type ="button" class="btn btn-grey4" data-num="2">2</button>
+								<button type ="button" class="btn btn-grey3" data-num="3">3</button>
+								<button type ="button" class="btn btn-yellow" data-num="-">-</button>
+								<button type ="button" class="btn btn-grey2" data-num=".">.</button>
+								<button type ="button" class="btn btn-grey1" data-num="0">0</button>
+								<button type ="button" class="btn-grey btn-greyy">Del</button>
+								<button type ="button"class="btn-grey btn-green">=</button>
+							</div>
+							</section>
+			<script>
+		(function(){
+
+    let screen = document.querySelector('.screen')
+    let buttons = document.querySelectorAll('.btn')
+    let clear = document.querySelector('.btn-red')
+    let equal = document.querySelector('.btn-green')
+    let back = document.querySelector('.btn-greyy')
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function(e) {
+            let value = e.target.dataset.num;
+            screen.value += value;
+        })
+    });
+
+    equal.addEventListener('click', function(e){
+        if(screen.value ===' '){
+            screen.value= "please enter";
+        }
+
+        else{
+            let answer=eval(screen.value);
+            screen.value=answer;
+        }
+    })
+    clear.addEventListener('click',function(e){
+        screen.value=" ";
+
+    })
+    back.addEventListener('click', function(e){
+    screen.value = screen.value.slice(0,-1);
+    })
+})();
+			</script>
+			</body>
+	</html>
