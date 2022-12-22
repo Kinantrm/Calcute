@@ -1,2 +1,2 @@
 # Hello There
-Website ini saya buat hanya untuk bersenang-senang.
+I made this website just for fun.
